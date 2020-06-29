@@ -28,12 +28,22 @@ dependencies {
 
 ## Usage
 There is a [sample](https://github.com/msomu/face-transformation/tree/master/app) provided which shows how to use the library, but for completeness, here is all that is required to get FaceCrop working:
-```java
+```kotlin
 Glide.with(this).load(url)
 .transform(FaceCrop()) // add this line
 .into(imageView)
 ```
 That's it!
+
+Results
+------
+![example image 1](/images/example_1.png?raw=true)
+
+![example image 2](/images/example_2.png?raw=true)
+
+![example image 3](/images/example_3.png?raw=true)
+
+![example image 4](/images/example_4.png?raw=true)
 
 ## Face detection
 This library uses ML Kit https://g.co/mlkit on-device machine learning.
