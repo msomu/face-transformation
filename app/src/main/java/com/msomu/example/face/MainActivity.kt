@@ -11,7 +11,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        loadImages("https://images.pexels.com/photos/39657/model-fashion-attractive-female-39657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        loadImages(getString(R.string.sample_image_url))
+        button.setOnClickListener {
+            loadImages(editTextTextUrl.text.toString())
+            editTextTextUrl.setText("")
+        }
     }
 
     private fun loadImages(url : String){

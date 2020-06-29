@@ -3,4 +3,7 @@
     <string name="center_crop">Center Crop</string>
     <string name="original">Original</string>
     <string name="face_crop">Face Crop</string>
+    <string name="image_url">Image Url</string>
+    <string name="sample_image_url">https://images.pexels.com/photos/2092474/pexels-photo-2092474.jpeg</string>
+    <string name="fetch_image">Fetch Image</string>
 </resources>
