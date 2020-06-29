@@ -36,21 +36,24 @@
             android:id="@+id/textViewCenterCrop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/center_crop"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewOriginal" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
 
         <ImageView
             android:id="@+id/imageViewCenterCrop"
             android:layout_width="0dp"
             android:layout_height="200dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:contentDescription="@string/center_crop"
+            app:layout_constraintDimensionRatio="w,1:1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewCenterCrop"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFaceCrop"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFaceCrop"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
         <TextView
@@ -58,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/face_crop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextUrl" />
@@ -67,10 +70,12 @@
             android:id="@+id/imageViewFaceCrop"
             android:layout_width="0dp"
             android:layout_height="200dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
             android:contentDescription="@string/face_crop"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewCenterCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewFaceCrop"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
