@@ -2,4 +2,8 @@
     package="com.msomu.glide.facetransformation">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
+    <meta-data
+        android:name="com.google.mlkit.vision.DEPENDENCIES"
+        android:value="face" />
 </manifest>
